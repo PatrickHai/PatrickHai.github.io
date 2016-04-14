@@ -1,0 +1,135 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <link rel="stylesheet" href="css/main.css">
+  <script src="js/main.js"></script>
+</head>
+
+<body>
+  <div class="col-md-3 grid-cell clearfix">
+    <div class="iconbox">
+      <div class="content-box">
+        <div class="pull-content"><i class="icon iconfont text-blue">&#xe680;</i></div>
+        <div class="content">
+          <div class="text-sm text-muted">药品 DRUGS</div>
+          <div class="text-lg text-blue" id="drugs"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-3 grid-cell">
+    <div class="iconbox">
+      <div class="content-box">
+        <div class="pull-content"><i class="icon iconfont text-green">&#xe683;</i></div>
+        <div class="content">
+          <div class="text-sm text-muted">疾病病症 JIBING</div>
+          <div class="text-lg text-green" id="illnesses"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-3 grid-cell">
+    <div class="iconbox">
+      <div class="content-box">
+        <div class="pull-content"><i class="icon iconfont text-yellow">&#xe681;</i></div>
+        <div class="content">
+          <div class="text-sm text-muted">合理用药 USEAGE</div>
+          <div class="text-lg text-yellow" id="medications"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-3 grid-cell">
+    <div class="iconbox">
+      <div class="content-box">
+        <div class="pull-content"><i class="icon iconfont text-red">&#xe684;</i></div>
+        <div class="content">
+          <div class="text-sm text-muted">检查化验 OBERSERVATION</div>
+          <div class="text-lg text-red" id="inspects"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="blk-2x"></div>
+  <div class="col-md-3">
+    <div class="icon heading grid-cell"><i class="icon iconfont text-blue">&#xe680;</i><b>药品概况</b></div>
+    <div class="grid-cell chart">
+      <div class="heading">药品大类分布</div>
+      <div id="pie"><svg id="pie-chart"></svg></div>
+    </div>
+    <div class="grid-cell chart">
+      <div class="heading">药品增长走势(近六个月)</div>
+      <svg id="line-chart"></svg>
+    </div>
+<!--     <div class="grid-cell chart">
+      <div class="heading">药品剂型分布</div>
+      <svg id="bar-chart"></svg>
+    </div> -->
+  </div>
+  <div class="col-md-3">
+    <div class="icon heading grid-cell"><i class="icon iconfont text-green">&#xe683;</i><b>疾病概览</b></div>
+    <div class="grid-cell chart">
+      <div class="heading">疾病类型分布</div>
+      <svg id="bar-chart1"></svg>
+    </div>
+    <div class="grid-cell chart">
+      <div class="heading">疾病数量走势</div>
+      <!-- <svg id="liquid_chart" onclick="switchLiquid()"></svg> -->
+      <svg id="line-chart1"></svg>
+    </div>
+  </div>
+  <div class="col-md-3">
+    <div class="icon heading grid-cell"><i class="icon iconfont text-yellow">&#xe681;</i><b>合理用药概览</b></div>
+    <div class="grid-cell chart">
+      <div class="heading">合理用药分布</div>
+      <svg id="bar-chart2"></svg>
+      <!-- <svg id="liquid_chart" onclick="switchLiquid()"></svg> -->
+    </div>
+    <div class="grid-cell chart">
+      <div class="heading">合理用药走势</div>
+      <svg id="line-chart2"></svg>
+    </div>
+  </div>
+  <div class="col-md-3">
+    <div class="icon heading grid-cell"><i class="icon iconfont text-red">&#xe682;</i><b>检查化验概览</b></div>
+    <div class="grid-cell chart">
+      <div class="heading">检查化验分布</div>
+      <svg id="bar-chart3"></svg>
+    </div>
+    <div class="grid-cell chart">
+      <div class="heading">检查化验走势</div>
+      <svg id="line-chart3"></svg>
+    </div>
+  </div>
+  <div class="blk-4x"></div>
+  <div class="icon heading"><i class="icon iconfont text-green">&#xe680;</i><b>最新药品</b></div>
+  <div class="blk-1x"></div>
+  <div class="search">
+    <input type="text" id="dragName" class="form-control" placeholder="请输入药品名称和编码">
+  </div>
+  <table>
+    <thead>
+      <tr>
+        <th>药品名称</th>
+        <th>药品规格</th>
+        <th>剂型</th>
+        <th>用法用量</th>
+        <th>生产厂家</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="tree.html" target="_blank">清肝片</a></td>
+        <td>每片重0.3g</td>
+        <td>板蓝根、茵陈、甘草</td>
+        <td>清热解毒，疏肝退黄。用于急、慢性肝炎。 </td>
+        <td>洛阳顺势药业有限公司</td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+
+</html>
